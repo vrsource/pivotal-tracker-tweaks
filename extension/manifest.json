@@ -1,0 +1,29 @@
+{
+   "name": "Pivotal Tracker Tweaks",
+   "version": "0.1.0",
+   "description": "",
+   "manifest_version": 2,
+
+   "update_url": "https://github.com/vrsource/pivotal-tracker-tweaks/master/autoupdate.xml",
+
+   "content_scripts": [
+      {
+         "matches": ["http://www.pivotaltracker.com/*",
+                     "https://www.pivotaltracker.com/*"],
+
+         "js": ["deps/underscore.js",
+                "deps/jquery-1.7.2.min.js",
+                "deps/handlebars-1.0.0.js"
+               ],
+
+         "css": []
+      }
+   ],
+
+   "web_accessible_resources": [],
+
+   "permissions": [
+      "tabs"
+   ]
+}
+

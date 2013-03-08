@@ -1,0 +1,18 @@
+{
+  "name": "pivotal_tracker_tweaks",
+  "title": "Pivotal Tracker Tweaks",
+  "description": "",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vrsource/pivotal-tracker-tweaks"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-cli": "~0.1.6",
+    "grunt-crx": "~0.2.0",
+    "grunt-contrib-jshint": "~0.2.0",
+    "grunt-contrib-watch": "~0.3.1",
+    "node-inspector": "~0.2.0beta3"
+  }
+}
