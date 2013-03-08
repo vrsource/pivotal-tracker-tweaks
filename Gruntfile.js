@@ -39,7 +39,7 @@ module.exports = function(grunt) {
          jshintrc: 'jshintrc'
       },
       build : ['Gruntfile.js'],
-      app   : ['extension/src/*.js']
+      app   : ['extension/src/*.js', '!**/rearrange_panels.js']
    };
    /** WATCH:
    *  provide a fast development watch and a slower full everything watch.
