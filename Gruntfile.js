@@ -4,7 +4,7 @@
 // -
 
 module.exports = function(grunt) {
-   var _ = grunt.util._;
+   //var _ = grunt.util._;
 
    // -- LOAD GRUNT PLUGINS -- //
    grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -46,14 +46,15 @@ module.exports = function(grunt) {
    */
    config.watch = {
       full : {
-         files : ['Gruntfile.js', 'extension/src/*.js'],
-         tasks : ['jshint']
+         files : ['Gruntfile.js', 'extension/*.json', 'extension/src/*.js'],
+         tasks : ['build']
       }
    };
 
    // -- REGISTER AND SETUP TASK ALIASES -- //
    grunt.initConfig(config);
 
-   grunt.registerTask('dev',     ['jshint', 'watch:full']);
+   grunt.registerTask('build',   ['jshint', 'crx']);
+   grunt.registerTask('dev',     ['build', 'watch:full']);
    grunt.registerTask('default', ['dev']);
 };
