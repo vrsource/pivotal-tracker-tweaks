@@ -3,7 +3,9 @@
 Overview
 ========
 
-This is a chrome extension that provides a variety of tweaks to help make pivotal tracker more useful for our workflow.  It includes the following tweaks:
+This is a chrome extension that provides a variety of tweaks to help make pivotal tracker more useful for our workflow.  In addition to including tweaks for our workflow, we are also interested in adding any contributions from the larger community.  If you have an idea you want to add, please fork the repository and share it with everyone.  Also, we may roll-up other small extensions to help people install a single extension with a number of useful features.
+
+It includes the following tweaks:
 
 * Prevent Epics from being auto completed
 
@@ -39,3 +41,9 @@ We use grunt and node for the build.  On most systems this should be very easy t
 Contributing
 ============
 Please fork the repository and add new features.
+
+Roadmap
+=======
+* Add a configuration page to enable/disable specific tweaks
+* Add display of number in full epic list with sum of all open story points
+* ...
