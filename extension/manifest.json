@@ -23,7 +23,9 @@
       }
    ],
 
-   "web_accessible_resources": [],
+   "web_accessible_resources": [
+      "epic_overrides.js"
+   ],
 
    "permissions": [
       "tabs"

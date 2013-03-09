@@ -39,14 +39,16 @@ module.exports = function(grunt) {
          jshintrc: 'jshintrc'
       },
       build : ['Gruntfile.js'],
-      app   : ['extension/src/*.js', '!**/rearrange_panels.js']
+      app   : ['extension/src/*.js', 'extension/*.js', '!**/rearrange_panels.js']
    };
    /** WATCH:
    *  provide a fast development watch and a slower full everything watch.
    */
    config.watch = {
       full : {
-         files : ['Gruntfile.js', 'extension/*.json', 'extension/src/*.js'],
+         files : ['Gruntfile.js', 'extension/*.json',
+                  'extension/src/*.js',
+                  'extension/*.js'],
          tasks : ['build']
       }
    };

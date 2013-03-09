@@ -24,6 +24,8 @@
    "devel": true,
 
    "globals": {
-      "_": false
+      "_": false,
+      "chrome": false,
+      "Epic": false
    }
 }
