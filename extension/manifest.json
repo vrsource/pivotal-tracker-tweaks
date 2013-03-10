@@ -6,6 +6,8 @@
 
    "update_url": "https://github.com/vrsource/pivotal-tracker-tweaks/master/autoupdate.xml",
 
+   "options_page": "options.html",
+
    "content_scripts": [
       {
          "matches": ["http://www.pivotaltracker.com/*",
@@ -16,19 +18,29 @@
                 "deps/jquery-ui-1.8.18.min.js",
                 "deps/handlebars-1.0.0.js",
                 "src/pt_tweak_main.js",
-                "src/rearrange_panels.js"
+                "src/rearrange_panels.js",
+                "src/epic_overrides.js"
                ],
 
          "css": []
       }
    ],
 
+   "background": {
+      "scripts": [
+         "deps/underscore.js",
+         "src/options.js",
+         "src/background.js"
+      ]
+   },
+
    "web_accessible_resources": [
       "epic_overrides.js"
    ],
 
    "permissions": [
-      "tabs"
+      "tabs",
+      "storage"
    ]
 }
 
