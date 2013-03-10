@@ -1,6 +1,6 @@
 {
    "name": "Pivotal Tracker Tweaks",
-   "version": "0.2.0",
+   "version": "0.3.0",
    "description": "",
    "manifest_version": 2,
 
@@ -19,7 +19,7 @@
                 "deps/handlebars-1.0.0.js",
                 "src/pt_tweak_main.js",
                 "src/rearrange_panels.js",
-                "src/epic_overrides.js"
+                "src/epic_hook.js"
                ],
 
          "css": []

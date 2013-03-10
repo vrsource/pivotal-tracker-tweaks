@@ -1,4 +1,4 @@
-/*global PTT:false, $:false */
+/*global PTT:false, inject_script:false */
 
 PTT.onOptionsLoaded(function(options) {
 
@@ -10,6 +10,14 @@ PTT.onOptionsLoaded(function(options) {
 
    console.log('Loading Epic Overrides plugin.');
 
+   // --- INJECT SCRIPTS --- //
+   // TODO:
+   // - Add option to split the epic overrides into two
+   // - OR determine way to pass options into the injected script as arguments
+   //
+   inject_script('epic_overrides.js');
+
+   /*
    var last_nodes = [],
        // nodes is a NodeList which the browser takes care to keep up to date
        // for us.  This makes the interval call very fast since we do not need
@@ -27,4 +35,6 @@ PTT.onOptionsLoaded(function(options) {
       }
       last_nodes = new_nodes;
    }, 100);
+   */
+
 });
