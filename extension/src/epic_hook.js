@@ -2,6 +2,7 @@
 
 PTT.onOptionsLoaded(function(options) {
 
+
    // Only load this tool if the user has not disabled it.
    if (! options.epicOverrides) {
       console.log('Epic Overrides plugin has been disabled');
@@ -15,7 +16,7 @@ PTT.onOptionsLoaded(function(options) {
    // - Add option to split the epic overrides into two
    // - OR determine way to pass options into the injected script as arguments
    //
-   inject_script('epic_overrides.js');
+   //inject_script('epic_overrides.js');
 
    /*
    var last_nodes = [],

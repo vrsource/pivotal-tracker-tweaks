@@ -15,6 +15,10 @@ function inject_script(scriptFile) {
    (document.head||document.documentElement).appendChild(s);
 }
 
+// Code to inject immediately
+// todo: get this loaded as part of configuration
+inject_script('epic_overrides.js');
+
 
 (function(exports) {
    function App() {
