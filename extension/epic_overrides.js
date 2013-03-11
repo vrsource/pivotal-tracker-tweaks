@@ -36,4 +36,25 @@ if(window.app) {
       app.layout.showEpicStoriesPanel(this.model.id());
    };
 
+   // Override the epic stories update method to add count to the epic
+   // table that shows the number of points remaining
+   var orig_updateStoriesInEpicGraph = EpicPreviewWidget.prototype._updateStoriesInEpicGraph;
+   EpicPreviewWidget.prototype._updateStoriesInEpicGraph = function() {
+      orig_updateStoriesInEpicGraph.apply(this, arguments);
+      if(!this._graphElement) {
+         return;
+      }
+
+      // Lazy add a div for remaining point count.
+      var $point_count = this.j('.epic_remaining_points');
+      if($point_count.length === 0) {
+         $point_count = j('<div class="epic_remaining_points"></div>');
+         this.j(this._graphElement).before($point_count);
+      }
+      // compute the updated value and set it in the DOM.
+      var pseudo_points = this.model.getPseudopoints();
+      var remaining_points = pseudo_points.unscheduled + pseudo_points.unstarted;
+      $point_count.html('' + remaining_points);
+   };
+
 }

@@ -25,6 +25,8 @@
 
    "globals": {
       "_": false,
+      "$": false,
+      "j": false,
       "chrome": false,
       "Epic": false
    }

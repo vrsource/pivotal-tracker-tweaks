@@ -15,6 +15,10 @@ By default PT will automatically handle epics and mark them as done as soon as a
 
 When clicking on epics and opening epics from the Epic list panel, the default behavior is to continue opening one new panel for each epic you click on.  This makes it difficult to rapidly scan through a number of epics looking at their detailed stories. The extensions changes this behavior and will close all epic story panels before opening the new panel.
 
+* Display count of story points remaining in epic panel
+
+When displaying the epic panel we display the number of remaining story points to the right of the progress chart.  This allows for easier comparison of large number of epics when reviewing.
+
 * Allow dragging of panels
 
 We include the excellent extension for allowing rearrange_panels.

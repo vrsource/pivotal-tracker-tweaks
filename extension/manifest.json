@@ -1,6 +1,6 @@
 {
    "name": "Pivotal Tracker Tweaks",
-   "version": "0.3.0",
+   "version": "0.4.0",
    "description": "",
    "manifest_version": 2,
 
@@ -22,7 +22,7 @@
                 "src/epic_hook.js"
                ],
 
-         "css": []
+         "css": ["css/ptt_style.css"]
       }
    ],
 

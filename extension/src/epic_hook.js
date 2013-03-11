@@ -1,4 +1,4 @@
-/*global PTT:false, inject_script:false */
+/*global PTT:false */
 
 PTT.onOptionsLoaded(function(options) {
 

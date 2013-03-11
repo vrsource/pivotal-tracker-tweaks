@@ -1,0 +1,11 @@
+/**
+* CSS Overrides
+*/
+.epic_remaining_points {
+   float: right;
+   width: 3%;
+   text-align: right;
+}
+.epicTable .epic_details_graph {
+   width: 29% !important;
+}
