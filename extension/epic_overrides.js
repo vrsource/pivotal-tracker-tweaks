@@ -57,4 +57,6 @@ if(window.app) {
       $point_count.html('' + remaining_points);
    };
 
+   console.log('Finished loading epic overrides');
+
 }

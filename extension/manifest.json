@@ -1,6 +1,6 @@
 {
    "name": "Pivotal Tracker Tweaks",
-   "version": "0.4.0",
+   "version": "0.5.0",
    "description": "",
    "manifest_version": 2,
 
@@ -12,6 +12,8 @@
       {
          "matches": ["http://www.pivotaltracker.com/*",
                      "https://www.pivotaltracker.com/*"],
+
+         "run_at": "document_end",
 
          "js": ["deps/underscore.js",
                 "deps/jquery-1.7.2.min.js",
